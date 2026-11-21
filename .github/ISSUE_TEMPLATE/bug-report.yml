@@ -11,7 +11,6 @@ body:
       Vi er taknemmelig for din report. Alt info du kan give, vil hjælpe os med at få det løst
 
   -type: texarea
-    id: description
     attributes:
       label: Beskriv fejlen
       description: Beskriv hvad fejlen er
