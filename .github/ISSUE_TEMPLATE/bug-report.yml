@@ -1,0 +1,46 @@
+name: Bug Report
+description: Rapporter fejl 
+title: "[BUG] "
+label: ["bug"]
+assignees: []
+
+body:
+  - type: markdown
+  attributes:
+    values: | 
+      Vi er taknemmelig for din report. Alt info du kan give, vil hjælpe os med at få det løst
+
+  - type: texarea
+    id: description
+    attributes:
+      label: Beskriv fejlen
+      description: Beskriv hvad fejlen er
+      placeholder: Fejlen er...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behaviour
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      placeholder: OS, browser, version, etc.
+    validations:
+      required: false
+
+  - type: textarea
+    id: STR
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Gå til...
+        2. Klik...
+        3. Observer fejl...
+    validations:
+      required: true
