@@ -1,45 +1,53 @@
+
 name: Bug Report
-description: Rapporter fejl 
+description: Rapporter en fejl
 title: "[BUG] "
-label: ["bug"]
+labels:
+  - bug
 assignees: []
 
 body:
-  -type: markdown
-  attributes:
-    values: | 
-      Vi er taknemmelig for din report. Alt info du kan give, vil hjælpe os med at få det løst
+  - type: markdown
+    attributes:
+      value: |
+        Vi er taknemmelige for din fejlrapport.
+        Al information, du kan give, hjælper os med at finde og løse problemet.
 
-  -type: texarea
+  - type: textarea
+    id: description
     attributes:
       label: Beskriv fejlen
-      description: Beskriv hvad fejlen er
+      description: Beskriv, hvad fejlen er.
       placeholder: Fejlen er...
     validations:
       required: true
 
-  -type: textarea
-    id: expected
-    attributes:
-      label: Expected behaviour
-    validations:
-      required: true
-
-  -type: textarea
-    id: environment
-    attributes:
-      label: Environment
-      placeholder: OS, browser, version, etc.
-    validations:
-      required: false
-
-  -type: textarea
-    id: STR
+  - type: textarea
+    id: steps
     attributes:
       label: Steps to reproduce
+      description: Hvordan kan vi genskabe fejlen?
       placeholder: |
         1. Gå til...
-        2. Klik...
-        3. Observer fejl...
+        2. Klik på...
+        3. Observer fejlen...
     validations:
       required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Forventet opførsel
+      description: Hvad skulle der være sket i stedet?
+      placeholder: Jeg forventede at...
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Miljø
+      description: Hvilket miljø oplevede du fejlen i?
+      placeholder: OS, browser, version osv.
+    validations:
+      required: false
