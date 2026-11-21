@@ -5,12 +5,12 @@ label: ["bug"]
 assignees: []
 
 body:
-  - type: markdown
+  -type: markdown
   attributes:
     values: | 
       Vi er taknemmelig for din report. Alt info du kan give, vil hjælpe os med at få det løst
 
-  - type: texarea
+  -type: texarea
     id: description
     attributes:
       label: Beskriv fejlen
@@ -19,14 +19,14 @@ body:
     validations:
       required: true
 
-  - type: textarea
+  -type: textarea
     id: expected
     attributes:
       label: Expected behaviour
     validations:
       required: true
 
-  - type: textarea
+  -type: textarea
     id: environment
     attributes:
       label: Environment
@@ -34,7 +34,7 @@ body:
     validations:
       required: false
 
-  - type: textarea
+  -type: textarea
     id: STR
     attributes:
       label: Steps to reproduce
